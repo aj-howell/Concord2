@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="18.0.1.1" class="java.beans.XMLDecoder">
+ <object class="sprint1.Database" id="Database0"/>
+<void class="sprint1.Group" method="getField">
+ <string>UserIDs</string>
+ <void method="set">
+  <object class="sprint1.Group" id="Group0">
+   <void class="sprint1.Group" method="getField">
+    <string>ChannelIDs</string>
+    <void method="set">
+     <object idref="Group0"/>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>0</int>
+      </void>
+     </object>
+    </void>
+   </void>
+   <void class="sprint1.Group" method="getField">
+    <string>Admin</string>
+    <void method="set">
+     <object idref="Group0"/>
+     <object class="java.util.HashMap">
+      <void method="put">
+       <int>0</int>
+       <boolean>true</boolean>
+      </void>
+     </object>
+    </void>
+   </void>
+   <void class="sprint1.Group" method="getField">
+    <string>BannedUsers</string>
+    <void method="set">
+     <object idref="Group0"/>
+     <object class="java.util.ArrayList"/>
+    </void>
+   </void>
+   <void class="sprint1.Group" method="getField">
+    <string>Kicked</string>
+    <void method="set">
+     <object idref="Group0"/>
+     <object class="java.util.ArrayList"/>
+    </void>
+   </void>
+   <void class="sprint1.Group" method="getField">
+    <string>GroupName</string>
+    <void method="set">
+     <object idref="Group0"/>
+     <string>CSC360</string>
+    </void>
+   </void>
+  </object>
+  <object class="java.util.ArrayList">
+   <void method="add">
+    <int>0</int>
+   </void>
+  </object>
+ </void>
+</void>
+<void class="sprint1.Message" id="Message0">
+ <void property="messageID">
+  <int>1</int>
+ </void>
+ <void property="content">
+  <string>Hello Dr. B</string>
+ </void>
+</void>
+<void class="sprint1.Message" id="Message1">
+ <void property="messageID">
+  <int>3</int>
+ </void>
+ <void property="content">
+  <string>Hello Dr. Coffee</string>
+ </void>
+</void>
+<void class="java.util.ArrayList" id="ArrayList0">
+ <void method="add">
+  <int>0</int>
+ </void>
+</void>
+<void class="sprint1.User" method="getField">
+ <string>Name</string>
+ <void method="set">
+  <object class="sprint1.User" id="User0">
+   <void class="sprint1.User" method="getField">
+    <string>Password</string>
+    <void method="set">
+     <object idref="User0"/>
+     <string>123</string>
+    </void>
+   </void>
+   <void class="sprint1.User" method="getField">
+    <string>ChannelIDs</string>
+    <void method="set">
+     <object idref="User0"/>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <int>0</int>
+      </void>
+     </object>
+    </void>
+   </void>
+   <void class="sprint1.User" method="getField">
+    <string>GroupIDS</string>
+    <void method="set">
+     <object idref="User0"/>
+     <object idref="ArrayList0"/>
+    </void>
+   </void>
+  </object>
+  <string>aj123</string>
+ </void>
+</void>
+<void class="sprint1.Database" id="Field0" method="getField">
+ <string>members</string>
+ <void id="ArrayList1" method="get">
+  <object idref="Database0"/>
+  <void method="add">
+   <object idref="User0"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList1"/>
+<void class="sprint1.Message" id="Message2">
+ <void property="content">
+  <string>This message was deleted</string>
+ </void>
+</void>
+<void class="sprint1.Message" id="Message3">
+ <void property="messageID">
+  <int>2</int>
+ </void>
+ <void property="content">
+  <string>This message was deleted</string>
+ </void>
+</void>
+<void class="sprint1.Channel" method="getField">
+ <string>messageIDs</string>
+ <void method="set">
+  <object class="sprint1.Channel" id="Channel0">
+   <void class="sprint1.Channel" method="getField">
+    <string>Topic</string>
+    <void method="set">
+     <object idref="Channel0"/>
+     <string>Homework</string>
+    </void>
+   </void>
+   <void class="sprint1.Channel" method="getField">
+    <string>LastMessageID</string>
+    <void method="set">
+     <object idref="Channel0"/>
+     <int>3</int>
+    </void>
+   </void>
+  </object>
+  <object class="java.util.ArrayList">
+   <void method="add">
+    <int>0</int>
+   </void>
+   <void method="add">
+    <int>1</int>
+   </void>
+   <void method="add">
+    <int>2</int>
+   </void>
+   <void method="add">
+    <int>3</int>
+   </void>
+  </object>
+ </void>
+</void>
+<void class="sprint1.Database" id="Field1" method="getField">
+ <string>groups</string>
+ <void id="ArrayList2" method="get">
+  <object idref="Database0"/>
+  <void method="add">
+   <object idref="Group0"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList2"/>
+<void class="sprint1.Database" id="Field2" method="getField">
+ <string>messages</string>
+ <void id="ArrayList3" method="get">
+  <object idref="Database0"/>
+  <void method="add">
+   <object idref="Message0"/>
+  </void>
+  <void method="add">
+   <object idref="Message3"/>
+  </void>
+  <void method="add">
+   <object idref="Message1"/>
+  </void>
+  <void method="add">
+   <object idref="Message2"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList3"/>
+<void class="sprint1.Database" id="Field3" method="getField">
+ <string>channels</string>
+ <void id="ArrayList4" method="get">
+  <object idref="Database0"/>
+  <void method="add">
+   <object idref="Channel0"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList4"/>
+</java>
